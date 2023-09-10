@@ -7,7 +7,7 @@ type ProductItemListProps = {
 
 export const ProductList = ({ products }: ProductItemListProps) => {
 	return (
-		<ul className="flex flex-row">
+		<ul data-testid="products-list" className="flex flex-row">
 			{products.map((product) => {
 				return (
 					<li key={product.id}>
